@@ -1,5 +1,5 @@
 # 彈性化軟體安裝規範<br>Flexible Software Installation Specification
-This specification define the configuration to let application/software's installation be flexible to multiple paradigms  
+This specification defines the configuration to let application/software's installation be flexible to multiple paradigms  
 <https://github.com/Lin-Buo-Ren/Flexible-Software-Installation-Specification>
 
 ## 智慧財產授權條款<br>Intellectual Property License

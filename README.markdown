@@ -26,8 +26,30 @@ The "source" file extension is rooted from GNU Bash, which means read the file a
 
 It is recommended to fill all the variables applicable for your application, however missing variable assignment should be accepted as well with fallback results
 
+#### META_APPLICATION_NAME
+The human-readable name of application
+
 ### META_APPLICATION_IDENTIFIER
 Application's identifier, application's name with limitation posed by the underlying platform
+
+This variable is normally set in all program's source code in F.H.S. paradigm to locate the location of package directory
+
+#### META_APPLICATION_DEVELOPER_NAME
+Developers' name of application
+
+#### META_APPLICATION_SITE_URL
+Application's official site URL
+
+#### META_APPLICATION_ISSUE_TRACKER_URL
+Application's issue/bug tracker URL
+
+#### META_APPLICATION_SEEKING_HELP_OPTION
+An action to let user get help from developer or other sources when error occurred
+
+Example:
+
+* "contact developer"
+* "go to &lt;support-url&gt;"
 
 ### META_APPLICATION_INSTALL_STYLE
 This variable controls the above mentioned paradigms used in the application:
@@ -129,28 +151,8 @@ This variable specifies the installation prefix directory for F.H.S. paradigm, u
 This is the setting file that configures S.D.C., it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIRECTORY}
 
 ### APPLICATION_METADATA.source
-This is the configuration file that configures the metadata of the application
+This is the configuration file that configures the metadata of the application, namely `META_APPLICATION_*` variables
 
 This file should be at the `${SHC_PREFIX_DIR}` for S.H.C paradigm and `${SDC_SHARED_RES_DIR}` for F.H.S. paradigm
 
 This file may contains following values:
-
-#### META_APPLICATION_NAME
-The human-readable name of application
-
-#### META_APPLICATION_DEVELOPER_NAME
-Developers' name of application
-
-#### META_APPLICATION_SITE_URL
-Application's official site URL
-
-#### META_APPLICATION_ISSUE_TRACKER_URL
-Application's issue/bug tracker URL
-
-#### META_APPLICATION_SEEKING_HELP_OPTION
-An action to let user get help from developer or other sources when error occurred
-
-Example:
-
-* "contact developer"
-* "go to &lt;support-url&gt;"

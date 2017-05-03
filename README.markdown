@@ -57,6 +57,57 @@ Direcotory contain software settings
 #### SDC_TEMP_DIR
 Directory contain temporory files created by program
 
+### Runtime-determined Settings
+The following variables defines the environment aspects that can only be detected in runtime, we use RUNTIME_ namespace for these variables.
+
+This variables will not be set if technically not available(e.g. the program is provided to intepreter/etc. via stdin), or just not implemented yet
+
+#### RUNTIME_EXECUTABLE_FILENAME
+The running executable's filename(without the underlying path)
+
+e.g. hello.executable
+
+#### RUNTIME_EXECUTABLE_NAME
+The running program's filename(like `RUNTIME_EXECUTABLE_FILENAME`, but without the filename extension
+
+e.g. hello
+
+This variable is made so that developers will make sensible executable names, which can be reused in program if needed
+
+#### RUNTIME_EXECUTABLE_DIRECTORY
+The path of the directory that the executable reside in
+
+e.g.
+
+* /usr/bin
+* /home/&lt;username&gt;/software/&lt;application name&gt;/bin
+* or simply any path where the executable is located
+
+#### RUNTIME_EXECUTABLE_PATH_ABSOLUTE
+The executable's full path(absolute path)
+
+Note that this variable will NOT follow symbolic links, which you have to use other method to know the application/package's directory, like assuming `/usr/share/&lt;package name>` if `RUNTIME_EXECUTABLE_PATH_ABSOLUTE` starts with `/usr` and vice-versa for `/usr/local`, or just hardcode the F.H.S. prefix during build time
+
+#### RUNTIME_EXECUTABLE_PATH_RELATIVE
+The executable's full path(but relative to the ${PWD})
+
+#### RUNTIME_PATH_DIRECTORIES
+Runtime environment's executable search path priority array
+
+May not be implementable if the programming langauge doesn't support arrays
+
+#### RUNTIME_COMMAND_BASE
+The (probably guessed) base command that executes the program(not including commandline arguments)
+
+This is handy when showing help, where the proper base command can be displayed
+
+Example algorithm:
+
+* If ${RUNTIME_EXECUTABLE_DIRECTORY} is in ${RUNTIME_PATH_DIRECTORIES}, this would be
+	* ${RUNTIME_EXECUTABLE_FILENAME}
+* if not this would be
+	* ./${RUNTIME_EXECUTABLE_PATH_RELATIVE}
+
 ### PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY.source(S.H.C. only)
 This is the setting file that configures PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY, the relative path fraction to the software's installation prefix directory, it should be placed with the same directory with the executable files, to determine the installation prefix from that location.
 

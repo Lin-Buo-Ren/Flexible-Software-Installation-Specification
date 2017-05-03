@@ -25,7 +25,7 @@ This section specifies the new concepts introduced in this specification, note t
 The "source" file extension is rooted from GNU Bash, which means read the file and assign the variable defined in it.
 
 ### META_APPLICATION_IDENTIFIER
-Application's identifier, application's name with limitation posed by other software
+Application's identifier, application's name with limitation posed by the underlying platform
 
 ### Software Directories Configuration(S.D.C.)
 This section defines and determines the directories referred by the software

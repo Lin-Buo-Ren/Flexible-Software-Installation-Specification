@@ -111,7 +111,7 @@ Example algorithm:
 ### PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY.source(S.H.C. only)
 This is the setting file that configures PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY, the relative path fraction to the software's installation prefix directory, it should be placed with the same directory with the executable files, to determine the installation prefix from that location.
 
-### SOFTWARE_INSTALLATION_PREFIX_DIRECTORY(S.H.C. only)
+### SHC_PREFIX_DIR(S.H.C. only)
 This variable specifies the installation prefix directory for S.H.C. paradigm, which may be one of the following:
 
 * ${USERDIR}/Software/&lt;Application Name&gt;

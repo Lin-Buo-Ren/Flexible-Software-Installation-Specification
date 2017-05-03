@@ -48,8 +48,16 @@ Direcotory contain software settings
 #### SDC_TEMP_DIR
 Directory contain temporory files created by program
 
-### SOFTWARE_INSTALLATION_PREFIX_DIR.source(S.H.C. only)
-This is the setting file that configures SOFTWARE_INSTALLATION_PREFIX_DIR the relative path fraction to the software's installation prefix directory, it should be placed with executable files, to determine the prefix directory from that location.
+### PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY.source(S.H.C. only)
+This is the setting file that configures PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY, the relative path fraction to the software's installation prefix directory, it should be placed with the same directory with the executable files, to determine the installation prefix from that location.
+
+### SOFTWARE_INSTALLATION_PREFIX_DIRECTORY(S.H.C. only)
+This variable specifies the installation prefix directory for S.H.C. paradigm, which may be one of the following:
+
+* ${USERDIR}/Software/&lt;Application Name&gt;
+	* USERDIR variable is a pseodo name for the user's home directory in different's OS's preference
+* /opt/&lt;Application Name&gt;
+* &lt;some random directory&gt;/&lt;Application Name&gt;
 
 ### FHS_PREFIX_DIR(F.H.S. only)
 This variable specifies the installation prefix directory for F.H.S. paradigm, usually the following:
@@ -58,4 +66,4 @@ This variable specifies the installation prefix directory for F.H.S. paradigm, u
 * /usr/local
 
 ### SOFTWARE_DIRECTORY_CONFIGURATION.source(S.H.C. only)
-This is the setting file that configures software directories referred in the program, it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIR}
+This is the setting file that configures software directories referred in the program, it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIRECTORY}

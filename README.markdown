@@ -77,3 +77,29 @@ This variable specifies the installation prefix directory for F.H.S. paradigm, u
 ### SOFTWARE_DIRECTORY_CONFIGURATION.source(S.H.C. only)
 This is the setting file that configures S.D.C., it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIRECTORY}
 
+### SOFTWARE_APPLICATION_METADATA.source
+This is the configuration file that configures the metadata of the application
+
+This file should be at the `${SOFTWARE_INSTALLATION_PREFIX_DIRECTORY}` for S.H.C paradigm and `${SDC_SHARED_RES_DIR}` for F.H.S. paradigm
+
+This file may contains following values:
+
+#### META_APPLICATION_NAME
+The human-readable name of application
+
+#### META_APPLICATION_DEVELOPER_NAME
+Developers' name of application
+
+#### META_APPLICATION_SITE_URL
+Application's official site URL
+
+#### META_APPLICATION_ISSUE_TRACKER_URL
+Application's issue/bug tracker URL
+
+#### META_APPLICATION_SEEKING_HELP_OPTION
+An action to let user get help from developer or other sources when error occurred
+
+Example:
+
+* "contact developer"
+* "go to &lt;support-url&gt;"

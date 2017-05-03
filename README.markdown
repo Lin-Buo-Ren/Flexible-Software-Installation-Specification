@@ -68,7 +68,7 @@ The running executable's filename(without the underlying path)
 e.g. hello.executable
 
 #### RUNTIME_EXECUTABLE_NAME
-The running program's filename(like `RUNTIME_EXECUTABLE_FILENAME`, but without the filename extension
+The running executable's filename(like `RUNTIME_EXECUTABLE_FILENAME`, but without the filename extension
 
 e.g. hello
 

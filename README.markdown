@@ -20,33 +20,33 @@ Refer the spec. here: <http://refspecs.linuxfoundation.org>
 This configuration assumes a *NIX root-directory tree structure exists and software files are split to specific directories(e.g. executable files are installed to `/usr/bin`, while resources are installed to `/usr/share/<package-name>` directory
 
 ## Introduced Concepts
-This section specifies the new concepts introduced in this specification
+This section specifies the new concepts introduced in this specification, note that all settings below will NOT be available if it's not applicable
 
 The "source" file extension is rooted from GNU Bash, which means read the file and assign the variable defined in it.
 
 ### META_APPLICATION_IDENTIFIER
-Application's identifier, application's name with limitation posed by other software, default(not implemented): unnamed-application
+Application's identifier, application's name with limitation posed by other software
 
 ### Software Directories Configuration(S.D.C.)
 This section defines and determines the directories referred by the software
 
 #### SDC_EXECUTABLES_DIR
-Directory to find executables(default: autodetermined, unset if not available)
+Directory to find executables
 
 #### SDC_LIBRARIES_DIR
-Directory to find libraries(default: autodetermined, unset if not available)
+Directory to find libraries
 
 #### SDC_SHARED_RES_DIR
-Directory contain shared resources(default: autodetermined, unset if not available)
+Directory contain shared resources
 
 #### SDC_I18N_DATA_DIR
-Directory contain internationalization(I18N) data(default: autodetermined, unset if not available)
+Directory contain internationalization(I18N) data
 
 #### SDC_SETTINGS_DIR
-Direcotory contain software settings(default: autodetermined, unset if not available)
+Direcotory contain software settings
 
 #### SDC_TEMP_DIR
-Directory contain temporory files created by program(default: autodetermined, unset if not available)
+Directory contain temporory files created by program
 
 ### SOFTWARE_INSTALLATION_PREFIX_DIR.source(S.H.C. only)
 This is the setting file that configures SOFTWARE_INSTALLATION_PREFIX_DIR the relative path fraction to the software's installation prefix directory, it should be placed with executable files, to determine the prefix directory from that location.

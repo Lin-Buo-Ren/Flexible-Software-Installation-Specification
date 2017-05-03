@@ -24,6 +24,8 @@ This section specifies the new concepts introduced in this specification, note t
 
 The "source" file extension is rooted from GNU Bash, which means read the file and assign the variable defined in it.
 
+It is recommended to fill all the variables applicable for your application, however missing variable assignment should be accepted as well with fallback results
+
 ### META_APPLICATION_IDENTIFIER
 Application's identifier, application's name with limitation posed by the underlying platform
 

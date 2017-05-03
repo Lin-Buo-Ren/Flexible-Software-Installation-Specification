@@ -75,4 +75,5 @@ This variable specifies the installation prefix directory for F.H.S. paradigm, u
 * /usr/local
 
 ### SOFTWARE_DIRECTORY_CONFIGURATION.source(S.H.C. only)
-This is the setting file that configures software directories referred in the program, it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIRECTORY}
+This is the setting file that configures S.D.C., it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIRECTORY}
+

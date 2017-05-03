@@ -24,10 +24,11 @@ This section specifies the new concepts introduced in this specification
 
 The "source" file extension is rooted from GNU Bash, which means read the file and assign the variable defined in it.
 
+### META_APPLICATION_IDENTIFIER
+Application's identifier, application's name with limitation posed by other software, default(not implemented): unnamed-application
+
 ### Software Directories Configuration(S.D.C.)
 This section defines and determines the directories referred by the software
-
-*These variables will NOT be available in STANDALONE paradigm*
 
 #### SDC_EXECUTABLES_DIR
 Directory to find executables(default: autodetermined, unset if not available)
@@ -47,21 +48,14 @@ Direcotory contain software settings(default: autodetermined, unset if not avail
 #### SDC_TEMP_DIR
 Directory contain temporory files created by program(default: autodetermined, unset if not available)
 
-### SOFTWARE_INSTALLATION_PREFIX_DIR.source
+### SOFTWARE_INSTALLATION_PREFIX_DIR.source(S.H.C. only)
 This is the setting file that configures SOFTWARE_INSTALLATION_PREFIX_DIR the relative path fraction to the software's installation prefix directory, it should be placed with executable files, to determine the prefix directory from that location.
 
-*This configuration is currently only used in Self-contained Hierarchy Configuration(S.H.C.).*
-
-### SOFTWARE_DIRECTORY_CONFIGURATION.source
-This is the setting file that configures software directories referred in the program, it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIR}
-
-*This configuration is currently only used in Self-contained Hierarchy Configuration(S.H.C.).*
-
-### FHS_PREFIX_DIR
+### FHS_PREFIX_DIR(F.H.S. only)
 This variable specifies the installation prefix directory for F.H.S. paradigm, usually the following:
 
 * /usr
 * /usr/local
 
-### META_APPLICATION_IDENTIFIER
-Application's identifier, application's name with limitation posed by other software, default(not implemented): unnamed-application
+### SOFTWARE_DIRECTORY_CONFIGURATION.source(S.H.C. only)
+This is the setting file that configures software directories referred in the program, it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIR}

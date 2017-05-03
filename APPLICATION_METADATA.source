@@ -1,0 +1,10 @@
+# Metadata of the application
+# ===========================
+# This is the configuration file that configures the metadata of the application
+#
+# https://github.com/Lin-Buo-Ren/Flexible-Software-Installation-Specification#application_metadatasource
+META_APPLICATION_NAME="My Awesome Application"
+META_APPLICATION_DEVELOPER_NAME="Dan the Man"
+META_APPLICATION_SITE_URL="http://example.com/my-awesome-application"
+META_APPLICATION_ISSUE_TRACKER_URL="http://example.com/my-awesome-application/issue-tracker"
+META_APPLICATION_SEEKING_HELP_OPTION="contact developer"

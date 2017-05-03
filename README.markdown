@@ -29,6 +29,13 @@ It is recommended to fill all the variables applicable for your application, how
 ### META_APPLICATION_IDENTIFIER
 Application's identifier, application's name with limitation posed by the underlying platform
 
+### META_APPLICATION_INSTALL_STYLE
+This variable controls the above mentioned paradigms used in the application:
+
+* STANDALONE for standalone paradigm
+* SHC for S.H.C.
+* FHS for F.H.S.
+
 ### Software Directories Configuration(S.D.C.)
 This section defines and determines the directories referred by the software
 

@@ -60,7 +60,7 @@ Directory contain temporory files created by program
 ### Runtime-determined Settings
 The following variables defines the environment aspects that can only be detected in runtime, we use RUNTIME_ namespace for these variables.
 
-This variables will not be set if technically not available(e.g. the program is provided to intepreter/etc. via stdin), or just not implemented yet
+These variables will not be set if technically not available(e.g. the program is provided to intepreter/etc. via stdin), or just not implemented yet
 
 #### RUNTIME_EXECUTABLE_FILENAME
 The running executable's filename(without the underlying path)

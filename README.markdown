@@ -37,6 +37,9 @@ This variable is normally set in all program's source code in F.H.S. paradigm to
 #### META_APPLICATION_DEVELOPER_NAME
 Developers' name of application
 
+#### META_APPLICATION_LICENSE
+The intellectual property license this application uses, may be different with certain program come with this application, in this case the program's license is used instead
+
 #### META_APPLICATION_SITE_URL
 Application's official site URL
 

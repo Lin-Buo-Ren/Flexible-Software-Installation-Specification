@@ -29,7 +29,7 @@ It is recommended to fill all the variables applicable for your application, how
 #### META_APPLICATION_NAME
 The human-readable name of application
 
-### META_APPLICATION_IDENTIFIER
+#### META_APPLICATION_IDENTIFIER
 Application's identifier, application's name with limitation posed by the underlying platform
 
 This variable is normally set in all program's source code in F.H.S. paradigm to locate the location of package directory

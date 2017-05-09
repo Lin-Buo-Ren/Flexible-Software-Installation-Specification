@@ -161,3 +161,8 @@ This is the configuration file that configures the metadata of the application, 
 This file should be at the `${SHC_PREFIX_DIR}` for S.H.C paradigm and `${SDC_SHARED_RES_DIR}` for F.H.S. paradigm
 
 This file may contains following values:
+
+* META_APPLICATION_DEVELOPER_NAME
+* META_APPLICATION_SITE_URL
+* META_APPLICATION_ISSUE_TRACKER_URL
+* META_APPLICATION_SEEKING_HELP_OPTION

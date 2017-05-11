@@ -26,6 +26,9 @@ The "source" file extension is rooted from GNU Bash, which means read the file a
 
 It is recommended to fill all the variables applicable for your application, however missing variable assignment should be accepted as well with fallback results
 
+### META_APPLICATION_*
+These parameters defines information about the application, which can be defined either in a program's source code(for single-program-as-a-application kind of application) or in a external file to be read into a program. 
+
 #### META_APPLICATION_NAME
 The human-readable name of application
 

@@ -54,7 +54,7 @@ Example:
 * "contact developer"
 * "go to &lt;support-url&gt;"
 
-### META_APPLICATION_INSTALL_STYLE
+#### META_APPLICATION_INSTALL_STYLE
 This variable controls the above mentioned paradigms used in the application:
 
 * STANDALONE for standalone paradigm

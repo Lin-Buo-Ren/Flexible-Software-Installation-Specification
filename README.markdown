@@ -64,8 +64,21 @@ This variable controls the above mentioned paradigms used in the application:
 * SHC for S.H.C.
 * FHS for F.H.S.
 
+### APPLICATION_METADATA.source
+This is the configuration file that configures the metadata of the application, namely `META_APPLICATION_*` variables
+
+This file should be at the `${SHC_PREFIX_DIR}` for S.H.C paradigm and `${SDC_SHARED_RES_DIR}` for F.H.S. paradigm
+
+This file may contains following values:
+
+* META_APPLICATION_DEVELOPER_NAME
+* META_APPLICATION_LICENSE
+* META_APPLICATION_SITE_URL
+* META_APPLICATION_ISSUE_TRACKER_URL
+* META_APPLICATION_SEEKING_HELP_OPTION
+
 ### Software Directories Configuration(S.D.C.)
-This section defines and determines the directories referred by the software
+This section defines and determines the directories referred by the software, while the following values is defined in the specification third-party values are allowed as well
 
 #### SDC_EXECUTABLES_DIR
 Directory to find executables
@@ -84,6 +97,9 @@ Direcotory contain software settings
 
 #### SDC_TEMP_DIR
 Directory contain temporory files created by program
+
+### SOFTWARE_DIRECTORY_CONFIGURATION.source(S.H.C./F.H.S. in some cases)
+This is the setting file that configures directory names under certain directory, it helps programs to locate these directories
 
 ### Runtime-determined Settings
 The following variables defines the environment aspects that can only be detected in runtime, we use RUNTIME_ namespace for these variables.
@@ -156,19 +172,3 @@ This variable specifies the installation prefix directory for F.H.S. paradigm, u
 
 * /usr
 * /usr/local
-
-### SOFTWARE_DIRECTORY_CONFIGURATION.source(S.H.C. only)
-This is the setting file that configures S.D.C., it should be placed to ${SOFTWARE_INSTALLATION_PREFIX_DIRECTORY}
-
-### APPLICATION_METADATA.source
-This is the configuration file that configures the metadata of the application, namely `META_APPLICATION_*` variables
-
-This file should be at the `${SHC_PREFIX_DIR}` for S.H.C paradigm and `${SDC_SHARED_RES_DIR}` for F.H.S. paradigm
-
-This file may contains following values:
-
-* META_APPLICATION_DEVELOPER_NAME
-* META_APPLICATION_LICENSE
-* META_APPLICATION_SITE_URL
-* META_APPLICATION_ISSUE_TRACKER_URL
-* META_APPLICATION_SEEKING_HELP_OPTION

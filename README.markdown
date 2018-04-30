@@ -140,7 +140,7 @@ Runtime environment's executable search path priority array
 
 May not be implementable if the programming langauge doesn't support arrays
 
-#### RUNTIME_COMMAND_BASE
+#### RUNTIME_COMMANDLINE_BASECOMMAND
 The (probably guessed) base command that executes the program(not including commandline arguments)
 
 This is handy when showing help, where the proper base command can be displayed

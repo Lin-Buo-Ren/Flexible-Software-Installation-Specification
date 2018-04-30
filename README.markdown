@@ -147,10 +147,11 @@ This is handy when showing help, where the proper base command can be displayed
 
 Example algorithm:
 
-* If ${RUNTIME_EXECUTABLE_DIRECTORY} is in ${RUNTIME_PATH_DIRECTORIES}, this would be
-	* ${RUNTIME_EXECUTABLE_FILENAME}
+* If `${RUNTIME_EXECUTABLE_DIRECTORY}` is in `${RUNTIME_PATH_DIRECTORIES}`, this would be
+  * `${RUNTIME_EXECUTABLE_FILENAME}`
 * if not this would be
-	* ./${RUNTIME_EXECUTABLE_PATH_RELATIVE}
+  * `./${RUNTIME_EXECUTABLE_PATH_RELATIVE}`
+
 
 ### PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY.source(S.H.C. only)
 This is the setting file that configures PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY, the relative path fraction to the software's installation prefix directory, it should be placed with the same directory with the executable files, to determine the installation prefix from that location.

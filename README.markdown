@@ -152,6 +152,9 @@ Example algorithm:
 * if not this would be
   * `./${RUNTIME_EXECUTABLE_PATH_RELATIVE}`
 
+#### RUNTIME_COMMANDLINE_ARGUMENTS
+
+An array of all command-line arguments, not including the base command.  The first member starts from the first possible index number the language supports (for C it is `0`).
 
 ### PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY.source(S.H.C. only)
 This is the setting file that configures PATH_TO_SOFTWARE_INSTALLATION_PREFIX_DIRECTORY, the relative path fraction to the software's installation prefix directory, it should be placed with the same directory with the executable files, to determine the installation prefix from that location.
